@@ -3,9 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta author="Sebastián Gómez Letelier">
-    <title></title>
+    <title>Desafío Multiplicación</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
+    <nav>
+      <h2>Multiplicador</h2>
+      <h6>Ingresa un número para generar una tabla de multiplicar</h6>
+    </nav>
+    <section>
 
+
+      <form>
+       <br>
+       Ingresa el Número:<br><br>
+       <input type="text" id="t1">
+       <br><br>
+
+
+       <input type="button" value="Multiplicar" onclick="Multiplicar();" class="btn btn-primary">
+       <p id="promedio" class="promedio"></p>
+       <br>
+      </form>
+
+
+    </section>
+
+    <script src="assets/js/script.js">
+    </script>
   </body>
 </html>

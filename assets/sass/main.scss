@@ -1,0 +1,40 @@
+@import "abstract/vendorvariables";
+@import "vendors/bootstrap/bootstrap";
+
+
+@import "abstract/variables";
+
+body {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 20pt;
+  font-family: 'Poppins', sans-serif;
+  nav {
+    background-color: black;
+    color: white;
+    padding: 5pt;
+  }
+  form {
+    background-color: #AFAFAF;
+    box-shadow: 0.1.1.1;
+    padding: 50pt;
+    padding-top: 20pt;
+  }
+}
+.promedio {
+  background-color: white;
+}
+.cuadro {
+  background-color: white;
+  font-weight: bold;
+  margin: 20pt;
+  padding: 10pt;
+  border-radius: 20%;
+  border: 1px;
+  border-style: solid;
+  width: auto;
+  display: inline-block;
+
+
+}
