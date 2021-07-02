@@ -4,21 +4,25 @@ function askForLimitNumber() {
   const parsedLimit = Number.parseInt(limit);
   if(limit >= 1 && limit <= 20){
     console.log("el número esta dentro del rango")
+    window.alert("el número esta dentro del rango")
     return limit
   } else {
     console.log("el número esta fuera de rango")
+    window.alert("el número esta fuera del rango")
     return null;
   }
-
 }
 
 //////////////////////////////////////////////////////////////
 
 const limitNumber = askForLimitNumber();
 
-for (let num1 = 1; num1 <= limitNumber; num1++){
-console.log(`${num1} x 5 = ${num1 * 5}`)
+for (let i = 1; i <= limitNumber; i++) {
+  console.log(`${i} x 10 = ${i * 10}`)
+  window.alert(`${i} x 10 = ${i * 10}`)
 }
+////////////////////////////////////////////////////////////////
+
 //for(let x = 1; x <= limitNumber; x++){
 //  let result = 1;
 //  for(let y = 1; y <= x; y++){
@@ -28,15 +32,17 @@ console.log(`${num1} x 5 = ${num1 * 5}`)
 //}
 
 
-for(let factoryNumber = 1; factoryNumber <= limitNumber; factoryNumber){
+for(let factoryNumber = 1; factoryNumber <= limitNumber; factoryNumber++){
   let result = 1;
   for(let multiplier = 1; multiplier <= factoryNumber; multiplier++) {
     result = result * multiplier;
   }
 
-  console.log(`El factorial de ${factoryNumber} puede ser ${result}`)
+  console.log(`El factorial de ${factoryNumber} puede ser ${result}`);
+
 }
-console.log({limitNumber});
+
+
 
 //function Multiplicar() {
 //var vr1 = document.getElementById('t1').value;
